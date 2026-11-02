@@ -24,6 +24,12 @@ I then found out about fastmcp; so, I put 2 and 2 together, and created an MCP s
 
 ## How to run
 First install [Docker](https://www.docker.com/products/docker-desktop/).
+Next create a dotenv file at `.docker/.env`.
+The contents of this file should be as follows:
+```dotenv
+DATABASE=statsDb
+```
+
 Then run the following command at the project root to build the container:
 ```bash
 docker compose -f ./docker-compose.yml up
